@@ -2,7 +2,7 @@ def fibonacci(n):
     valores = [0, 1]
     for i in range(1, n):
         valores.append(valores[-1] + valores[-2])
-    
+
     valores.remove(0)
     return(valores)
 def n_termino(n):
@@ -15,10 +15,16 @@ def suma_n_terminos(n):
     suma = sum(lista)
     return suma
 
-y = n_termino(10)
-x = fibonacci(10)
-z = suma_n_terminos(10)
+# caso 1 ejercicio A
+a = int(input("Ingrese la cantidad de terminos que desea: "))
+print("Ejercicio A, n términos de la serie: ",fibonacci(a))
 
-print(x)
-print(y)
-print(z)
+#Caso 1 ejercicio B
+b = int(input("Ingrese n termino que desea: "))
+print("Ejercicio B, n término de la serie: ",n_termino(b))
+
+#Caso 1 ejercicio C
+c = int(input("Ingrese la cantidad de terminos que desea sumar: "))
+print("Ejercicio A, suma de n términos de la serie: ",suma_n_terminos(c))
+
+    

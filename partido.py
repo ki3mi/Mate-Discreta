@@ -4,8 +4,14 @@ def factorial(n):
     else:
         return n * factorial(n-1)
 
-def combinatoria(n):
-    partidos = 2*(factorial(n)/(factorial(2)*factorial(n-2)))
+def combinatoria(a, b):
+    data = factorial(a)/(factorial(b)*factorial(a-b))
+    return data
+
+def partidos(n):
+    partidos = 2*(combinatoria(n, 2)) + combinatoria(8, 2)
     return(partidos)
 
-print(combinatoria(8))
+
+n = int(input("Ingrese la cantidad de equipos: "))
+print(f"El número de partidos a jugar para {n} equipos son: ",int(partidos(n)))
