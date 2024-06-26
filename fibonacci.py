@@ -31,14 +31,17 @@ while True:
         # caso 1 ejercicio A
         a = int(input("Ingrese la cantidad de terminos que desea: "))
         print("Ejercicio A, n términos de la serie: ",fibonacci(a))
+        x = input("*Preciona una tecla para volver al menú*")
     elif option == 2:
         #Caso 1 ejercicio B
         b = int(input("Ingrese n termino que desea: "))
         print("Ejercicio B, n término de la serie: ",n_termino(b))
+        x = input("*Preciona una tecla para volver al menú*")
     elif option == 3:
         #Caso 1 ejercicio C
         c = int(input("Ingrese la cantidad de terminos que desea sumar: "))
         print("Ejercicio A, suma de n términos de la serie: ",suma_n_terminos(c))
+        x = input("*Preciona una tecla para volver al menú*")
     else:
         break
 
