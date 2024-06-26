@@ -54,5 +54,3 @@ while True:
         x = input("*Preciona una tecla para volver al menú*")
     else:
         break
-
-    
